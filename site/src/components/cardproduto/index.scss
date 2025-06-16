@@ -1,6 +1,6 @@
 .card-produto {
-  width: 260px;             /* largura fixa */
-  height: 400px;        /* altura mínima para uniformizar */
+  width: 260px;            
+  height: 400px;      
   border-radius: 16px;
   overflow: hidden;
   background: #fff;
@@ -18,7 +18,7 @@
   .link-card {
     text-decoration: none;
     color: inherit;
-    flex-grow: 1;          /* faz o link ocupar o espaço restante */
+    flex-grow: 1;       
 
     img {
       width: 100%;
@@ -30,7 +30,7 @@
 
     .info {
       padding: 16px;
-      height: 120px;        /* altura fixa para o conteúdo do texto */
+      height: 120px;       
 
       h2 {
         font-size: 1.1rem;

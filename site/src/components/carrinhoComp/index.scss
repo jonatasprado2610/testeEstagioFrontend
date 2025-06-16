@@ -1,6 +1,6 @@
 .carrinho-container {
   display: flex;
-  align-items: stretch; /* importante para igualar altura dos filhos */
+  align-items: stretch; 
   background: #fff;
   border: 1px solid #ddd;
   border-radius: 12px;
@@ -8,7 +8,7 @@
   padding: 16px;
   gap: 16px;
   width: 650px;
-  height: 150px; /* altura fixa para todos os cards */
+  height: 150px; 
   margin: 0 auto;
  
 }
