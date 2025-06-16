@@ -1,0 +1,22 @@
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #f3f3f3;
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: #fff;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.carousel-item-padding {
+  padding: 5px !important; // ajusta espaçamento entre os cards
+}
+.card-produto {
+  margin: 5px !important; // evitar espaçamento duplicado
+}

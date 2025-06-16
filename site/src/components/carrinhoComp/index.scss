@@ -1,0 +1,112 @@
+.carrinho-container {
+  display: flex;
+  align-items: stretch; /* importante para igualar altura dos filhos */
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 16px;
+  gap: 16px;
+  width: 650px;
+  height: 150px; /* altura fixa para todos os cards */
+  margin: 0 auto;
+ 
+}
+
+.imagem {
+  flex-shrink: 0;
+  width: 120px;
+  height: 120px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+}
+
+.info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  h3 {
+    font-size: 1.1rem;
+    margin: 0;
+    font-weight: 600;
+    color: #222;
+    line-height: 1.3;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .quantidade {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    label {
+      font-weight: 500;
+      font-size: 0.9rem;
+      color: #555;
+      user-select: none;
+    }
+
+    input[type="number"] {
+      width: 40px;
+      padding: 6px 8px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+
+      &:focus {
+        outline: none;
+        border-color: #007bff;
+        box-shadow: 0 0 6px rgba(0,123,255,0.4);
+      }
+    }
+  }
+
+  .valores {
+    display: flex;
+    gap: 24px;
+
+    div {
+      display: flex;
+      flex-direction: column;
+
+      span {
+        font-size: 0.85rem;
+        color: #666;
+        margin-bottom: 4px;
+      }
+
+      strong {
+        font-size: 1rem;
+        color: #111;
+      }
+    }
+  }
+}
+
+button.remover {
+  background: transparent;
+  border: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: #c00;
+  padding: 6px;
+  border-radius: 50%;
+  align-self: start;
+  transition: background-color 0.3s, color 0.3s;
+
+  &:hover {
+    background-color: #fdd;
+    color: #900;
+  }
+}
